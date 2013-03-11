@@ -8,7 +8,8 @@ if len(sys.argv) < 2:
   domains=open('domains','r').readlines()
   domains=[domain[:-1] for domain in domains]
 else:
-  domains=[sys.argv[1:]]
+  domains=sys.argv[1:]
+  print domains
 
 
 for domain in domains:
